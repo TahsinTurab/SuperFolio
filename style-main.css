@@ -1,0 +1,455 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+/* body{
+    position: relative;
+} */
+.up{
+    position: fixed;
+    z-index: 1200;
+    right: 10px;
+    bottom: 10px;
+}
+.up i{
+    font-size: 25px;
+    color: black;
+}
+/* div{
+    border: 1px solid red;
+} */
+
+/* Header start  */
+.header-section{
+    background: #f3f4f5;
+    position: fixed;
+    width: 100%;
+}
+.header-section #nav{
+    background: #f3f4f5;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px;
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+#nav a{
+    text-decoration: none;
+    color: black;
+    opacity: 0.9;
+    margin: 5px;
+    margin-left: 47%;
+    text-align: left;
+    padding: 2px;
+    transition: 0.3s;
+}
+#nav a:hover{
+    border-left: 3px solid black;
+    transition: 0.3s;
+}
+#nav button{
+    border: none;
+}
+#nav i{
+    font-size: 25px;
+}
+.header-wrapper{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+.header-wrapper h3{
+    margin-left: 15%;
+    width: fit-content;
+    font-size: 30px;
+    cursor: pointer;
+}
+.header-wrapper .navbar{
+    display: none;
+}
+
+.header-wrapper button{
+    border-radius: 100px;
+    width: 70px;
+    padding: 5px;
+    cursor: pointer;
+}
+.header-wrapper i{
+    font-size: 25px;
+}
+/* Header end  */
+
+
+/* Hero Section Start  */
+.hero-section{
+    background: #f3f4f5;
+    padding: 5px;
+}
+.hero-wrapper{
+    margin-top: 80px;
+}
+
+.hero-image{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.hero-image img{
+    width: 70%;
+}
+.hero-intro{
+    width: 90%;
+    margin: 15px auto;
+}
+.hero-intro h2{
+    font-weight: 300;
+    letter-spacing: 0.05em;
+}
+.hero-name{
+    position: relative;
+    margin-bottom: 50px;
+    width: 250px;
+}
+.hero-name img{
+    width: 40%;
+    height: 20px;
+    position: absolute;
+    right: -30px;
+    top: 85%;
+}
+.social{
+    margin: 15px 0px;
+}
+.social a{
+    color: black;
+    margin: 0 5px;
+    opacity: 0.8;
+    font-size: 1.00em;
+    transition: 0.3s;
+    z-index: -1;
+}
+.social a:hover{
+    opacity: .6;
+    transition: 0.3s;
+}
+.hero-section button{
+    margin-top: 20px;
+    background: #f6e05e;
+    border-radius: 30px;
+    padding: 13px 30px;
+    font-weight: 700;
+    border: 0px solid;
+    transition: .3s;
+    -webkit-box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.82); 
+    box-shadow: 0px 0px 13px -3px rgba(0,0,0,0.82);
+}
+.hero-section button:hover{
+    opacity: 0.8;
+    transition: .3s;
+}
+.svg{
+    margin-top: -5px;
+}
+
+/* Hero Section End  */
+
+
+/* About Start  */
+.about-section{
+    margin-top: 30px;
+}
+
+.about-image{
+    width: 90%;
+    margin: 0 auto;
+}
+.about-image img{
+    max-width: 50%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.about-text{
+    width: 90%;
+    margin: 20px auto;
+    padding: 5px;
+    text-align: justify;
+}
+
+/* About End  */
+
+/* Service Start  */
+.service-section{
+    margin-top: 100px;
+}
+.service-wrapper{
+    width: 90%;
+    margin: 15px auto;
+    margin-top: 10px;
+}
+
+.service-title{
+    position: relative;
+    margin-bottom: 100px;
+    width: 200px;
+    margin: 0 auto;
+    z-index: -1;
+}
+.service-title img{
+    width: 50%;
+    height: 20px;
+    position: absolute;
+    right: 40px;
+    top: 85%;
+}
+
+.service{
+    margin: 50px ;
+}
+.service-image{
+    width: fit-content;
+    margin: 0 auto;
+}
+.service h2{
+    width: fit-content;
+    margin: 0 auto;
+}
+
+/* Skill Start  */
+.skill-section{
+    margin-top: 100px;
+}
+.skill-section p{
+    width: 90%;
+    text-align: justify;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.skill-wrapper{
+    background: #f3f4f5;
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.part{
+    width: fit-content;
+    margin: 0 auto;
+}
+.skill-text{
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-right: 10px;
+}
+.skill-text h6{
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 10px;
+    margin-bottom: 8px;
+}
+.bar-behind{
+    background: gainsboro; 
+    width: 300px; 
+    height: 15px; 
+    border-radius: 20px;
+    z-index: -1;
+}
+.bar-up{
+    background: #f6e05e;
+    z-index: 1; 
+    /* width: 300px; */
+    height: 15px; border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.ninety{
+    width: 270px;
+}
+.eighty{
+    width: 240px;
+}
+.seventy-five{
+    width: 225px;
+}
+.seventy{
+    width: 210px;
+}
+.sixty{
+    width: 180px;
+}
+/* .skill{
+    width: 90%;
+    margin: 0 auto;
+    background: #f3f4f5;
+    padding-top: 10px;
+} */
+/* Service End  */
+
+/* portfolio start  */
+.portfolio-section{
+    margin-top: 100px;
+}
+.portfolio-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.portfolio-column{
+    width: fit-content;
+    margin: 0 auto;
+}
+.portfolio-column img{
+    width: 330px;
+}
+/* portfolio end  */
+
+/* experience-section start  */
+.experience-section{
+    margin-top: 100px;
+}
+.experience-wrapper{
+    width: 90%;
+    margin: 0 auto;
+}
+.cell{
+    border: 2px solid #f3f4f5;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.head{
+    background: #f3f4f5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    padding-right: 5px;
+}
+.head p{
+    margin-top: 20px;
+}
+.head span{
+    font-size: 13px;
+}
+.ex-body{
+    padding: 10px;
+    text-align: justify;
+}
+
+/* Experience End  */
+
+/* Testimonial Start  */
+.testimonial-section{
+    margin-top: 100px;
+}
+.testimonial-wrapper{
+    width: 90%;
+    margin: 20px auto;
+}
+.test-cell{
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.complement{
+    display: flex;
+}
+.complement i{
+    font-size: 30px;
+}
+.complement p{
+    margin: 15px;
+    text-align: justify;
+}
+.client{
+    display: flex;
+    margin-top: 20px;
+    justify-content:right;
+}
+.client-intro{
+    margin-top: 40px;
+    margin-right: 10px;
+    margin-left: 70px;
+}
+.client-intro p{
+    font-size: 12px;
+    font-weight: 500;
+    text-align: right;
+}
+.client img{
+    width: 100px;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.test-cell{
+    margin-top: 10px;
+}
+/* Testimonial End  */
+/* Contact Start  */
+.contact-section{
+    margin-top: 100px;
+}
+.contact-wrapper{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+.form{
+    background: #f4f6f8;
+    border-radius: 10px;
+}
+.form form{
+    padding: 25px;
+}
+.form form label{
+    font-weight: 500;
+}
+.form form input{
+    width: 100%;
+    height: 30px;
+    border: 2px solid gainsboro;
+    border-radius: 8px;
+}
+.form .message{
+    height: 100px;
+}
+.form form button{
+    background: #f6e05e;
+    border: none;
+    padding: 13px 30px;
+    font-weight: 700;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.form form button:hover{
+    opacity: .8;
+    transition: .3s;
+}
+
+.contact-text{
+    padding: 10px;
+}
+
+.contact-text p{
+    font-size: 14px;
+}
+
+/* Contact end  */
+
+/* Footer Start  */
+.footer{
+    background: #f4f6f8;
+    margin-top: 100px;
+    text-align: center;
+    padding: 80px;
+}
+.social a:hover{
+    opacity: 0.6;
+}
+
+/* Footer End  */
